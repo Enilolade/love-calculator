@@ -1,0 +1,149 @@
+* {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #f9f9fb;
+  background-image: url(./images/valentines-day-heart-shape-with-rose-petals.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  min-height: 100vh;
+  padding: 0 1rem;
+  position: relative;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 2;
+}
+
+.heading {
+  font-family: "Oleo Script", serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.content {
+  margin: auto;
+  height: 15rem;
+  width: 70%;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* justify-content: space-between;
+  height: 50%; */
+}
+
+.name-input {
+  border: none;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 0.3rem 0.5rem;
+}
+
+.love-score-btn {
+  background-color: #ff0000;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Oleo Script", serif;
+  padding: 0.5rem;
+}
+
+.love-score-btn:hover {
+  box-shadow: 3px 3px 5px #ffedfa;
+}
+
+footer {
+  background-color: #ffedfa;
+  color: #ff0000;
+  font-family: "M PLUS Code Latin", serif;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-size: contain;
+    background-position: top center;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .content {
+    width: 90%;
+    justify-content: space-evenly;
+  }
+  .love-text {
+    font-size: 1.3rem;
+  }
+  .user-info-box {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .love-score-btn {
+    padding: 0.7rem;
+    border-radius: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .content {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .love-text-box {
+    width: 60%;
+  }
+}

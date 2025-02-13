@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="shortcut icon"
+      href="./Favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <title>Love Score</title>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div class="overlay"></div> -->
+    <header>
+      <h1 class="heading">Love Calculator</h1>
+    </header>
+    <main>
+      <div class="content">
+        <div class="love-text-box">
+          <p class="love-text">
+            Celebrate this season of love by using our Love Calculator to
+            discover your love score.
+          </p>
+        </div>
+
+        <div class="user-info-box">
+          <div class="username-box user-1">
+            <p>Your Name:</p>
+            <input
+              class="name-input"
+              type="text"
+              name="username"
+              id="username"
+              placeholder="first name only"
+            />
+          </div>
+          <div class="username-box user-2">
+            <p>Lover's Name:</p>
+            <input
+              class="name-input"
+              type="text"
+              name="lover-name"
+              id="lover-name"
+              placeholder="first name only"
+            />
+          </div>
+        </div>
+        <div class="love-score-box">
+          <button class="love-score-btn" type="submit">
+            Calculate Love Score
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Designed and coded by Lolly-codes with love</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
